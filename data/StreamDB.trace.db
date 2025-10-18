@@ -1,0 +1,86 @@
+2025-10-17 20:32:25.774867+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table employee_info (id integer not null auto_increment, address varchar(255), age integer not null, bonus float(53) not null, city varchar(255), company_name varchar(255), country varchar(255), department varchar(255), dob date, edu_level varchar(255), email varchar(255), employee_id varchar(255), employment_type varchar(255), gender varchar(255), is_active bit not null, is_full_time bit not null, is_married bit not null, job_title varchar(255), joining_date date, manager_name varchar(255), name varchar(255), perf_rating integer, phone_number varchar(255), project_name varchar(255), salary float(53) not null, shift varchar(255), skills varchar(255), state varchar(255), team varchar(255), work_location varchar(255), experience integer, primary key (id)) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table employee_info (id integer not null auto_increment, address varchar(255), age integer not null, bonus float(53) not null, city varchar(255), company_name varchar(255), country varchar(255), department varchar(255), dob date, edu_level varchar(255), email varchar(255), employee_id varchar(255), employment_type varchar(255), gender varchar(255), is_active bit not null, is_full_time bit not null, is_married bit not null, job_title varchar(255), joining_date date, manager_name varchar(255), name varchar(255), perf_rating integer, phone_number varchar(255), project_name varchar(255), salary float(53) not null, shift varchar(255), skills varchar(255), state varchar(255), team varchar(255), work_location varchar(255), experience integer, primary key (id)) engine=InnoDB [42001-232]
+2025-10-17 20:32:29.467861+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE_INFO" not found (this database is empty); SQL statement:
+select count(*) from employee_info e1_0 [42104-232]
+2025-10-17 20:35:22.954243+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table employee_info (\000d\000a        id integer not null auto_increment,\000d\000a        address varchar(255),\000d\000a        age integer not null,\000d\000a        bonus float(53) not null,\000d\000a        city varchar(255),\000d\000a        company_name varchar(255),\000d\000a        country varchar(255),\000d\000a        department varchar(255),\000d\000a        dob date,\000d\000a        edu_level varchar(255),\000d\000a        email varchar(255),\000d\000a        employee_id varchar(255),\000d\000a        employment_type varchar(255),\000d\000a        gender varchar(255),\000d\000a        is_active bit not null,\000d\000a        is_full_time bit not null,\000d\000a        is_married bit not null,\000d\000a        job_title varchar(255),\000d\000a        joining_date date,\000d\000a        manager_name varchar(255),\000d\000a        name varchar(255),\000d\000a        perf_rating integer,\000d\000a        phone_number varchar(255),\000d\000a        project_name varchar(255),\000d\000a        salary float(53) not null,\000d\000a        shift varchar(255),\000d\000a        skills varchar(255),\000d\000a        state varchar(255),\000d\000a        team varchar(255),\000d\000a        work_location varchar(255),\000d\000a        experience integer,\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table employee_info (
+        id integer not null auto_increment,
+        address varchar(255),
+        age integer not null,
+        bonus float(53) not null,
+        city varchar(255),
+        company_name varchar(255),
+        country varchar(255),
+        department varchar(255),
+        dob date,
+        edu_level varchar(255),
+        email varchar(255),
+        employee_id varchar(255),
+        employment_type varchar(255),
+        gender varchar(255),
+        is_active bit not null,
+        is_full_time bit not null,
+        is_married bit not null,
+        job_title varchar(255),
+        joining_date date,
+        manager_name varchar(255),
+        name varchar(255),
+        perf_rating integer,
+        phone_number varchar(255),
+        project_name varchar(255),
+        salary float(53) not null,
+        shift varchar(255),
+        skills varchar(255),
+        state varchar(255),
+        team varchar(255),
+        work_location varchar(255),
+        experience integer,
+        primary key (id)
+    ) engine=InnoDB [42001-232]
+2025-10-17 20:35:26.591710+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE_INFO" not found (this database is empty); SQL statement:
+select count(*) from employee_info e1_0 [42104-232]
+2025-10-17 20:37:58.771748+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table employee_info (\000d\000a        age integer not null,\000d\000a        bonus float(53) not null,\000d\000a        dob date,\000d\000a        experience integer,\000d\000a        id integer not null auto_increment,\000d\000a        is_active bit not null,\000d\000a        is_full_time bit not null,\000d\000a        is_married bit not null,\000d\000a        joining_date date,\000d\000a        perf_rating integer,\000d\000a        salary float(53) not null,\000d\000a        address varchar(255),\000d\000a        city varchar(255),\000d\000a        company_name varchar(255),\000d\000a        country varchar(255),\000d\000a        department varchar(255),\000d\000a        edu_level varchar(255),\000d\000a        email varchar(255),\000d\000a        employee_id varchar(255),\000d\000a        employment_type varchar(255),\000d\000a        gender varchar(255),\000d\000a        job_title varchar(255),\000d\000a        manager_name varchar(255),\000d\000a        name varchar(255),\000d\000a        phone_number varchar(255),\000d\000a        project_name varchar(255),\000d\000a        shift varchar(255),\000d\000a        skills varchar(255),\000d\000a        state varchar(255),\000d\000a        team varchar(255),\000d\000a        work_location varchar(255),\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table employee_info (
+        age integer not null,
+        bonus float(53) not null,
+        dob date,
+        experience integer,
+        id integer not null auto_increment,
+        is_active bit not null,
+        is_full_time bit not null,
+        is_married bit not null,
+        joining_date date,
+        perf_rating integer,
+        salary float(53) not null,
+        address varchar(255),
+        city varchar(255),
+        company_name varchar(255),
+        country varchar(255),
+        department varchar(255),
+        edu_level varchar(255),
+        email varchar(255),
+        employee_id varchar(255),
+        employment_type varchar(255),
+        gender varchar(255),
+        job_title varchar(255),
+        manager_name varchar(255),
+        name varchar(255),
+        phone_number varchar(255),
+        project_name varchar(255),
+        shift varchar(255),
+        skills varchar(255),
+        state varchar(255),
+        team varchar(255),
+        work_location varchar(255),
+        primary key (id)
+    ) engine=InnoDB [42001-232]
+2025-10-17 20:38:02.953218+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE_INFO" not found (this database is empty); SQL statement:
+select count(*) from employee_info e1_0 [42104-232]

@@ -131,13 +131,13 @@ public class EmployeeInitializer {
 
                 String[] emailProviders = { "gmail.com", "yahoo.com", "outlook.com", "example.com", "mail.com" };
 
-                String email = names[random.nextInt(names.length)].toLowerCase()
-                                + (100 + random.nextInt(900)) + "@"
-                                + emailProviders[random.nextInt(emailProviders.length)];
-
-                boolean isBoolean = random.nextBoolean();
-
                 for (int i = 0; i < 1000; i++) {
+
+                        String email = names[random.nextInt(names.length)].toLowerCase()
+                                        + (100 + random.nextInt(900)) + "@"
+                                        + emailProviders[random.nextInt(emailProviders.length)];
+
+                        boolean isBoolean = random.nextBoolean();
 
                         LocalDate startDate = LocalDate.now().minusYears(10);
                         LocalDate endDate = LocalDate.now();
@@ -162,7 +162,6 @@ public class EmployeeInitializer {
                         // Random 10-digit phone number
                         long phoneLong = Math.abs(random.nextLong() % 1_000_000_0000L); // 0 to 9999999999
                         String phoneNumber = String.format("%010d", phoneLong);
-
 
                         // Creating the Employeess
                         Employee employee = new Employee();
