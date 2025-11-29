@@ -60,7 +60,7 @@ public class UserIMPL implements IUser {
         if (user == null)
             return null;
 
-        return new RegisterResponseDTO().builder()
+        return RegisterResponseDTO.builder()
                 .name(user.getName())
                 .userName(user.getUserName())
                 .role(user.getRole())
